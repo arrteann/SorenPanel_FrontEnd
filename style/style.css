@@ -72,7 +72,7 @@ body {
     .form-box form input::placeholder {
       color: #39ae69; }
   .form-box form button {
-    margin-top: .4rem;
+    margin-top: 0.4rem;
     padding: 8px 16px;
     width: 10rem;
     border: none;
@@ -83,9 +83,24 @@ body {
     cursor: pointer;
     color: white;
     background-color: #46cf81;
-    transition: all .6s ease-out; }
+    transition: all 0.6s ease-out; }
     .form-box form button:hover {
       box-shadow: 0px 2px 15px rgba(70, 207, 129, 0.8); }
+  .alert {
+    width: 85%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    margin: .5rem auto; }
+  .error {
+    background-color: #fd5347; }
+  .success {
+    background-color: #40be7d; }
 
 * {
   padding: 0;
