@@ -4,7 +4,7 @@
   "description": "Panel For Controll API",
   "main": "index.js",
   "scripts": {
-    "server": "http-server .",
+    "server": "live-server .",
     "sass:build": "node-sass style/sass/main.scss style/style.css --watch"
   },
   "repository": {

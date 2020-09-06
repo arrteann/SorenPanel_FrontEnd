@@ -1,0 +1,23 @@
+// IMPORT BASE
+@import "./base";
+.title-box {
+  @include flexColumm;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  .title {
+    color: $primary-color;
+    font-size: 3.5rem;
+  }
+  .line {
+    width: 9rem;
+    height: 1px;
+    border-radius: 2px;
+    background-color: $secondary-color;
+    padding: 1.2px;
+  }
+  margin: {
+      top: 30px;
+      bottom: 30px;
+  };
+}

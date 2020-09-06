@@ -1,0 +1,72 @@
+// IMPORT COLOR
+@import "./base";
+// FORM COMPONENTS
+.form-box {
+  form {
+    width: 25rem;
+		@include flexColumm;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+
+    input {
+			width: 85%;
+      display: inline-block;
+      direction: rtl;
+      font-size: 1.1rem;
+      color: $primary-color;
+      background-color: transparent;
+
+      padding: 8px 16px;
+      margin: {
+        top: 5px;
+        bottom: 5px;
+      }
+
+      border: 1px solid $secondary-color;
+      border-radius: 3px;
+      outline: none;
+
+      transition: all 0.9s ease;
+
+      &:focus {
+        direction: ltr;
+        border-color: darken($color: $primary-color, $amount: 1%);
+        box-shadow: 0px 0px 4px $primary-color;
+      }
+
+      &:focus &::placeholder {
+        direction: rtl;
+      }
+
+      &::placeholder {
+        color: $primary-color;
+      }
+    }
+
+    button {
+			margin-top: .4rem;
+			padding: 8px 16px;
+
+			width: 10rem;
+			
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.2);
+
+			font-size: 1.3rem;
+			font-weight: 700;
+
+			cursor: pointer;
+			
+			color: white;
+			background-color: $green-color;
+			
+			transition: all .6s ease-out;
+
+			&:hover{
+				box-shadow: 0px 2px 15px rgba($color: $green-color, $alpha: 0.8);
+			}
+		}
+  }
+}
