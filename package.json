@@ -1,0 +1,27 @@
+{
+  "name": "sorenpanel",
+  "version": "1.0.0",
+  "description": "Panel For Controll API",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server .",
+    "sass:build": "node-sass style/sass/main.scss style/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artinam/SorenPanel_FrontEnd.git"
+  },
+  "author": "Artiname",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Artinam/SorenPanel_FrontEnd/issues"
+  },
+  "homepage": "https://github.com/Artinam/SorenPanel_FrontEnd#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "vazir-font": "^26.0.2"
+  }
+}
