@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "server": "live-server .",
-    "sass:build": "node-sass style/sass/main.scss style/style.css --watch"
+    "sass:build": "node-sass style/sass/main.scss style/style.css --watch",
+    "serv":"npm run sass:build & npm run server"
   },
   "repository": {
     "type": "git",
