@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>LOGIN - SORENEX </title>
+    <title>NEW ADMIN - SORENEX </title>
     <!-- FONT -->
     <!-- WHEN FINISH DEVELOP Move TO Fonts Folder -->
     <link rel="stylesheet" href="/fonts/font-face-FD-WOL.css">
@@ -20,14 +20,26 @@
     <div class="container h-100">
         <div class="container-center">
             <div class="title-box">
-                <h1 class="title">ورود</h1>
+                <h1 class="title">مدیر جدید</h1>
                 <div class="line"></div>
             </div>
             <div class="form-box">
                 <form method="post">
+                    <input type="text" name="name" id="name" class="no-ltr" placeholder="نام نام خانوادگی">
                     <input type="email" name="email" id="email" placeholder="ایمیل">
                     <input type="password" name="password" id="password" placeholder="پسورد">
-                    <button type="submit" class="button">ورود</button>
+
+                    <input list="browsers" name="browser" id="browser" placeholder="نقش">
+
+                    <datalist id="browsers">
+                        <option value="تغیر قیمت">
+                        <option value="پشتیبانی">
+                        <option value="حواله ها">
+                        <option value="مدیر کل">
+                        <option value="صدور فاکتور">
+                    </datalist>
+
+                    <button type="submit" class="button">ثبت</button>
                 </form>
             </div>
         </div>
