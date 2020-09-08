@@ -89,7 +89,7 @@
     }
   }
 }
-// TABLE
+// TABLE PRICE
 .tables {
   .table {
     @include flexColumm();
@@ -98,7 +98,7 @@
     margin: {
       bottom: 40px;
     }
-    
+
     &-share {
       background-color: $primary-color;
       padding: 10px 20px;
@@ -162,6 +162,42 @@
             color: $dark-color;
           }
         }
+      }
+    }
+  }
+}
+
+// TABLE ROW
+.tablesVert {
+  .tableVert-head {
+    border-top: 1px solid #cfcfcf;
+    margin: {
+      bottom: 9px;
+    };
+  }
+
+  .tableVert {
+    width: 50rem;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid #cfcfcf;
+
+    ul {
+      user-select: none;
+      direction: rtl;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      color: $dark-color;
+      font-size: 1.2rem;
+      padding: .2rem .4rem;
+      transition: all .5s ease;
+
+      &:hover{
+        color: $green-color;
       }
     }
   }
